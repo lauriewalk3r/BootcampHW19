@@ -40,7 +40,7 @@ body {
       text-decoration: none;
   }
   .mainNavItem a:hover {
-      outline: 1px dotted #fff;
+      color:#103A72;
   }
   #heroGrid {
     margin: 0px 0%;
@@ -119,17 +119,34 @@ body {
     color: #fff;
     text-decoration: none;
 }
-  footer {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ADBB0D;
-    height: 100px;
-  }
-  .footer {
-    color: white;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-  }
+.footernavigation {
+        display: flex;
+        align-items: center;
+        background-color: #ADBB0D;
+        height: 200px;
+        margin-top: 36px;
+        justify-content: space-between;
+    }
+      .footerItem1 {
+        margin-right: 64px;
+        align-items: center;
+        justify-content: right;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .flexContainer {
+          display: column;
+          width: 100%;
+        }
+        .grid-container {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: 
+          "item1" 
+          "item2"
+          "item3"
+          "item4"
+          "item5"
+          "item6"
+        }
+      }
