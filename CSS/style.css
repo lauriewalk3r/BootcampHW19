@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0% 0%;
     font-family: 'Montserrat';
   }
   .mainHeader {
@@ -43,11 +42,11 @@ body {
       color:#103A72;
   }
   #heroGrid {
-    margin: 0px 0%;
+    margin: 0% 0%;
     display: grid;
     height: 520px;
     grid-template-rows: 520px 900px;
-    grid-template-columns: 539.81px 900px;
+    grid-template-columns: 36.5% 63.5%;
     grid-template-areas:
     "heroImg LizLakedescription"
    ;
@@ -55,98 +54,87 @@ body {
   #LizLakedescription {
     text-align: center;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 42px;
-    padding-left: 61px;
-    padding-right: 61px;
-    padding-top: 104px;
-    padding-bottom: 105px;
+    padding: 10%;
+    padding-top: 3rem;
     background-color: #103A72;
   }
   #heroImg {
     grid-area: heroImg;
     background-image: url(../Images/Headshot-1.png);
+    display: flex;
   }
 
-  .viewresume {
+.viewresume {
     margin: 10% 6.333%;
     background-color:#ADBB0D;
     color: white;
-    width: 290px;
-    height: 290px;
-    font-size: 36px;
-    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    font-size: 24px;
+    font-weight: 400;
     border-radius: 50%;
     display: inline-flex;
     align-items: center; 
     justify-content: center;
-  }
-  .uxed {
+}
+.uxed {
     margin: 10% 6.333%;
     background-color:#D64168;
     color: #FFFFFF;
-    width: 290px;
-    height: 290px;
-    font-size: 36px;
-    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    font-size: 24px;
+    font-weight: 400;
     border-radius: 50%;
     display: inline-flex;
     align-items: center; 
     justify-content: center;
   }
-  .lmsdesign {
+.lmsdesign {
     margin: 10% 6.333%;
     background-color:#103A72;
     color: #FFFFFF;
-    width: 290px;
-    height: 290px;
-    font-size: 36px;
-    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    font-size: 24px;
+    font-weight: 400;
     border-radius: 50%;
     display: inline-flex;
     align-items: center; 
     justify-content: center;
-  }
-  .viewresume a {
+}
+.viewresume a {
     color: #fff;
     text-decoration: none;
+}
+.viewresume a:hover {
+    font-weight: 900;
 }
 .uxed a{
     color: #fff;
     text-decoration: none;
 }
+.uxed a:hover {
+    font-weight: 900;
+}
 .lmsdesign a {
     color: #fff;
     text-decoration: none;
 }
-.footernavigation {
-        display: flex;
-        align-items: center;
-        background-color: #ADBB0D;
-        height: 200px;
-        margin-top: 36px;
-        justify-content: space-between;
-    }
-      .footerItem1 {
-        margin-right: 64px;
-        align-items: center;
-        justify-content: right;
-      }
+.lmsdesign a:hover {
+    font-weight: 900;
+}
+footer {
+    background-color: #ADBB0D;
+    height: 100px;
+}
+.footerItem {
+    padding-right: 32px;
+    align-items: center;
+    justify-content: right;
+}
       
-      @media only screen and (max-width: 600px) {
-        .flexContainer {
-          display: column;
-          width: 100%;
-        }
-        .grid-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-          grid-template-areas: 
-          "item1" 
-          "item2"
-          "item3"
-          "item4"
-          "item5"
-          "item6"
-        }
-      }
+    @media only screen and (max-width: 600px) {
+    }
