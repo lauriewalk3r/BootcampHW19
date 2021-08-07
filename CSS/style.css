@@ -62,6 +62,7 @@ body {
   }
   #LizLakedescription {
     text-align: center;
+    wor
     color: #FFFFFF;
     font-size: 28px;
     line-height: 42px;
@@ -147,5 +148,18 @@ body {
   align-items: center;
 }
       
-    @media only screen and (max-width: 600px) {
-    }
+@media only screen and (max-width: 600px) {
+#herogrid {
+  width: 90%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "1fr"
+  "1fr"
+  ;
+}
+p {
+  word-wrap: break-word;
+  font-size: 18px;
+}
+}
