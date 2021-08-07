@@ -65,9 +65,8 @@ body {
     background-image: url(../Images/Headshot-1.png);
     display: flex;
   }
-
 .viewresume {
-    margin: 10% 6.333%;
+    margin: 10% 7.33%;
     background-color:#ADBB0D;
     color: white;
     width: 250px;
@@ -80,7 +79,7 @@ body {
     justify-content: center;
 }
 .uxed {
-    margin: 10% 6.333%;
+    margin: 10% 7.33%;
     background-color:#D64168;
     color: #FFFFFF;
     width: 250px;
@@ -93,7 +92,7 @@ body {
     justify-content: center;
   }
 .lmsdesign {
-    margin: 10% 6.333%;
+    margin: 10% 7.33%;
     background-color:#103A72;
     color: #FFFFFF;
     width: 250px;
