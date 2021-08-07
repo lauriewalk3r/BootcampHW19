@@ -54,15 +54,15 @@ body {
     margin: 0% 0%;
     display: grid;
     height: 520px;
-    grid-template-rows: 520px 900px;
-    grid-template-columns: 35% 65%x;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35% 65%;
     grid-template-areas:
     "heroImg LizLakedescription"
    ;
   }
   #LizLakedescription {
+    grid-area: LizLakedescription;
     text-align: center;
-    wor
     color: #FFFFFF;
     font-size: 28px;
     line-height: 42px;
@@ -150,16 +150,12 @@ body {
       
 @media only screen and (max-width: 600px) {
 #herogrid {
-  width: 90%;
-  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "1fr"
-  "1fr"
-  ;
-}
-p {
-  word-wrap: break-word;
-  font-size: 18px;
+  "heroImg" 
+  "LizLakedescription"
+ ;
+ height: auto;
 }
 }
