@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+.mainHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	background-color: #ADBB0D;
+	color: white;
+	height: 200px;
+}
+.siteLogo {
+	display: flex;
+	align-items: center;
+  font-size: 36px;
+}
+
+.logoImage {
+	width: 68px;
+	height: auto;
+	border-radius: 16px;
+	margin: 0 16px 0 0;
+}
+.mainNavigation {
+	display: flex;
+	align-items: center;
+  font-size: 24px;
+  padding: 0 16px;
+}
+.mainNavItem1 a {
+  padding: 0 16px;
+	color:#D64168;
+	text-decoration: none;
+}
+.mainNavItem2 a {
+  padding: 0 16px;
+	color: white;
+	text-decoration: none;
+}
+.mainNavItem3 a {
+  padding: 0 16px;
+	color: white;
+	text-decoration: none;
+}
+.mainNavItem1 a:hover {
+	color:#103A72;
+}
+.mainNavItem2 a:hover {
+	color:#103A72;
+}
+.mainNavItem3 a:hover {
+	color:#103A72;
+}
+h1 {
+  text-align: left;
+  color: #103A72;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 3rem;
+}
+h2 {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #103A72;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #103A72;
+}
+p {
+  text-align: left;
+  line-height: 24px;
+}
+.flexContainer {
+  margin-right:32px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 30% 60%;
+  justify-items: center;
+  grid-gap: 6rem;
+  grid-template-areas: 
+  "item1 item2"
+  "item3 item4"
+  "item5 item6"
+  ;
+}
+.button {
+  background-color: #D64168;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 28px;
+  grid-row-end: right;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footernavigation {
+  display: flex;
+  align-items: center;
+  background-color: #ADBB0D;
+  height: 150px;
+  margin-top: 36px;
+  justify-content: right;
+}
+.footerItem1 {
+  padding: 36px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    display: column;
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item1" 
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6"
+  }
+}
