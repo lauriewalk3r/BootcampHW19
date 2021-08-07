@@ -29,17 +29,29 @@ body {
     align-items: center;
     font-size: 24px;
   }
-  
-  .mainNavItem {
-      padding: 0 16px;
-      color: #fff;
+  .mainNavItem1 a {
+    padding: 0 16px;
+    color:#D64168;
+    text-decoration: none;
   }
-  .mainNavItem a {
-      color: #fff;
-      text-decoration: none;
+  .mainNavItem2 a {
+    padding: 0 16px;
+    color: white;
+    text-decoration: none;
   }
-  .mainNavItem a:hover {
-      color:#103A72;
+  .mainNavItem3 a {
+    padding: 0 16px;
+    color: white;
+    text-decoration: none;
+  }
+  .mainNavItem1 a:hover {
+    color:#103A72;
+  }
+  .mainNavItem2 a:hover {
+    color:#103A72;
+  }
+  .mainNavItem3 a:hover {
+    color:#103A72;
   }
   #heroGrid {
     margin: 0% 0%;
