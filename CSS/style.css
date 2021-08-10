@@ -53,12 +53,13 @@ body {
   #heroGrid {
     margin: 0% 0%;
     display: grid;
-    height: 520px;
     grid-template-rows: 1fr;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 70%;
     grid-template-areas:
     "heroImg LizLakedescription"
    ;
+   align-items: center;
+   background-color: #103A72;
   }
   #LizLakedescription {
     grid-area: LizLakedescription;
@@ -66,17 +67,26 @@ body {
     color: #FFFFFF;
     font-size: 28px;
     line-height: 42px;
-    padding: 10%;
-    padding-top: 2rem;
-    background-color: #103A72;
+    padding: 0 10%;
   }
   #heroImg {
     grid-area: heroImg;
-    background-image: url(../Images/Headshot-1.png);
-    display: flex;
+    margin: 0 auto;
+    border: 2px solid red;
   }
+  #heroImg img {
+    width: 320px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+#roundButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
 .viewresume {
-    margin: 10% 7.33%;
     background-color:#ADBB0D;
     color: white;
     width: 250px;
@@ -84,12 +94,11 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .uxed {
-    margin: 10% 7.33%;
     background-color:#D64168;
     color: #FFFFFF;
     width: 250px;
@@ -97,12 +106,11 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 .lmsdesign {
-    margin: 10% 7.33%;
     background-color:#103A72;
     color: #FFFFFF;
     width: 250px;
@@ -110,9 +118,9 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .viewresume a {
     color: #fff;
@@ -148,14 +156,31 @@ body {
   align-items: center;
 }
       
-@media only screen and (max-width: 600px) {
-#herogrid {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "heroImg" 
-  "LizLakedescription"
- ;
- height: auto;
+@media only screen and (max-width: 1200px) {
+  #heroGrid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "heroImg" 
+    "LizLakedescription"
+  ;
+  align-items: center;
+  }
+  #LizLakedescription {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 0;
+    border: 1px solid yellow;
+  }
 }
+
+@media only screen and (max-width: 800px) {
+  #roundButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .viewresume, .uxed {
+    margin-bottom: 4%;
+  }
 }
